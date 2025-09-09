@@ -1,55 +1,76 @@
-*{
+/* Reset global */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header y footer */
 header, footer {
-    background-color: black;
+    background-color: #000;
     color: aliceblue;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
 }
 
-main{
-    width: 400px;
-    margin: 0 auto;
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-h1{
-    margin: 10px;
+footer {
+    font-size: 0.9rem;
+}
+
+/* Contenido principal */
+main {
+    max-width: 600px; /* Más flexible que width fijo */
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 h2 {
     border-bottom: 1px solid #222;
-}
-img{
-    width: 10px;
-    height: auto;
-    box-shadow: 30px 20px 30px #333;
+    padding-bottom: 0.5rem;
 }
 
-section{
-    margin: 20px 0;
-    border: 1px solid rgb(0, 0, 0)/ 10%;
-    padding: 10px;
-    background-color: #abe;
-    font-size: 9rem;
+/* Secciones */
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 6px;
+    background-color: #aabbef;
 }
 
-section p {
-    margin: 10px;
-}
+section p,
 section ul {
-    margin: 10px 20px;
+    margin: 0.5rem 1rem;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
-footer{
-    font-size: .9rem;
-}
-    
