@@ -23,16 +23,12 @@ footer {
   text-align: center;
 }
 
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
 footer {
   font-size: 0.9rem;
   margin-top: 2rem;
   border-top: 2px solid #444;
 }
+
 
 nav {
   background-color: #333;
@@ -46,6 +42,7 @@ nav a {
   text-decoration: none;
 }
 
+
 main {
   max-width: 600px;
   margin: 2rem auto;
@@ -55,16 +52,21 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1,
-h2 {
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 h2 {
+  text-align: center;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #222;
   padding-bottom: 0.5rem;
 }
+
 
 section {
   margin: 2rem 0;
@@ -78,6 +80,7 @@ section p,
 section ul {
   margin: 0.5rem 1rem;
 }
+
 
 aside {
   width: 80%;
@@ -95,11 +98,14 @@ aside img {
   margin-bottom: 1rem;
 }
 
+
 img {
-  max-width: 100%;
+  width: 200px;
   height: auto;
+  margin-bottom: 1rem;
   display: block;
-  margin: 1rem auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
