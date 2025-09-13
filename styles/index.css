@@ -44,9 +44,6 @@ main {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -72,36 +69,40 @@ section {
   background-color: #aabbef;
 }
 
+
 section p,
 section ul {
   margin: 0.5rem 1rem;
 }
 
 
-aside {
-  width: 80%;
-  margin: 2rem auto;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: center;
-}
-
-aside img {
+main img {
+  display: block;
+  margin: 0.5rem auto;
   width: 200px;
   height: auto;
-  margin-bottom: 1rem;
   border: 2px solid #ccc;
   padding: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 
-main img {
+aside {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #aabbef;
+  text-align: center;
+}
+
+
+aside img {
+  display: block;
+  margin: 0.5rem auto;
   width: 200px;
   height: auto;
-  margin-bottom: 1rem;
   border: 2px solid #ccc;
   padding: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
