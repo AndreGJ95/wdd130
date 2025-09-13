@@ -26,11 +26,6 @@ footer {
   text-align: center;
 }
 
-footer {
-  margin-top: 2rem;
-  border-top: 2px solid #444;
-}
-
 
 nav {
   background-color: #333;
@@ -53,7 +48,6 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 h1 {
   font-size: 2rem;
@@ -98,14 +92,25 @@ aside img {
   width: 200px;
   height: auto;
   margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 
-img {
+main img {
   width: 200px;
   height: auto;
   margin-bottom: 1rem;
   border: 2px solid #ccc;
   padding: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+  background-color: #000;
+  color: aliceblue;
+  padding: 1rem;
+  text-align: center;
 }
