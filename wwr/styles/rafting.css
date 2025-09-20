@@ -1,11 +1,10 @@
-/* styles/rafting.css */
-
 :root{
   --body-font: "Arial", "Helvetica", sans-serif;
   --heading-font: "Georgia", "Times New Roman", serif;
   --primary-color: #0b3d91;    
   --accent1-color: #264653;    
-  --accent2-color: #2a9d8f;    
+  --accent2-color: #2a9d8f; 
+  --muted-bg: #f4f4f4; 
 }
 
 *{
@@ -36,7 +35,6 @@ nav, p, section, article{
   padding: 8px;
 }
 
-
 header nav{
   display: flex;
   justify-content: center;
@@ -49,7 +47,6 @@ header nav a{
   font-weight: 600;
 }
 
-
 .hero {
   position: relative; 
 }
@@ -59,7 +56,6 @@ header nav a{
   width: 100%;
   height: auto;
 }
-
 
 .hero h1 {
   position: absolute;
@@ -74,7 +70,6 @@ header nav a{
   font-size: 2rem;
 }
 
-
 .hero article {
   position: absolute;
   bottom: 0.5rem; 
@@ -83,13 +78,9 @@ header nav a{
   width: 90%;
   background-color: rgba(255, 204, 102, 0.9); 
   padding: 16px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .hero article p {
-  flex: 1;
   margin: 0;
   color: #000; 
 }
@@ -99,4 +90,12 @@ header nav a{
   height: auto;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  float: right; /* ✅ */
+  margin-left: 1rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 0.25rem; 
 }
