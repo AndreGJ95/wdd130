@@ -1,4 +1,3 @@
-
 :root {
   --body-font: "Arial", "Helvetica", sans-serif;
   --heading-font: "Georgia", "Times New Roman", serif;
@@ -8,13 +7,11 @@
   --muted-bg: #f4f4f4;          
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: var(--body-font);
@@ -38,12 +35,19 @@ nav, p, section, article {
   padding: 8px;
 }
 
+/* HEADER GRID */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+}
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
-  margin-top: 8px;
 }
 
 header nav a {
@@ -52,7 +56,13 @@ header nav a {
   font-weight: 600;
 }
 
+header h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 0.5rem;
+}
 
+/* HERO */
 .hero {
   position: relative;
 }
@@ -76,7 +86,6 @@ header nav a {
   font-size: 2rem;
 }
 
-
 .hero article {
   position: absolute;
   bottom: 0.5rem;
@@ -88,22 +97,70 @@ header nav a {
 }
 
 .hero article p {
-  margin: 0;
+  margin: 0.5rem 0;
   color: #000;
 }
 
 .hero article img {
   width: 125px;
-  height: auto;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   float: right; 
   margin-left: 1rem;
 }
 
+/* HISTORY SECTION */
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ADVENTURES SECTION */
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--accent1-color);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+footer nav.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
 
 .socialmedia a {
   text-decoration: none; 
   display: inline-block;
-  margin: 0 0.25rem;
 }
