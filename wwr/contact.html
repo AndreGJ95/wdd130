@@ -20,14 +20,19 @@
   </header>
 
   <main>
+    <!-- Company Info -->
     <section class="company-info">
       <h1>White Water Rafting Company</h1>
-      <p>1V693+R7 <br>Nesquehoning, Pensilvania</p>
+      <p>1V693+R7 <br>Nesquehoning, Pennsylvania</p>
       <p>+15706699127<br>
-      <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+        <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+      </p>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.1380527225424!2d-75.79744713822294!3d40.869451730626885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c5b2053f4c26ab%3A0x59bebc6dc172141b!2sWhitewater%20Rafting%20Adventures!5e1!3m2!1ses-419!2sec!4v1759598539058!5m2!1ses-419!2sec"
-       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.1380527225424!2d-75.79744713822294!3d40.869451730626885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c5b2053f4c26ab%3A0x59bebc6dc172141b!2sWhitewater%20Rafting%20Adventures!5e1!3m2!1ses-419!2sec!4v1759598539058!5m2!1ses-419!2sec" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
 
@@ -35,29 +40,35 @@
     <section class="contact-form">
       <h2>Contact Us</h2>
       <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <label for="fullname">Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
 
         <p>Message Purpose</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <label for="purpose-general">
+          <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
+        </label>
+        <label for="purpose-reservation">
+          <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
+        </label>
+        <label for="purpose-suggestion">
+          <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
+        </label>
 
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Type your message here..." rows="5"></textarea>
 
-        <label>
-          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
         </label>
 
         <button type="submit">Get in Touch!</button>
       </form>
     </section>
 
-    <!-- Employee Profiles -->
+    <!-- Employees -->
     <section class="employees">
       <h2>We Are Here to Serve You</h2>
       <figure>
