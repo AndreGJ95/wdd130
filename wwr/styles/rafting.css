@@ -1,41 +1,241 @@
+:root {
+  --body-font: "Arial", "Helvetica", sans-serif;
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --primary-color: #0b3d91;
+  --accent1-color: #264653;
+  --accent2-color: #2a9d8f;
+  --muted-bg: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--muted-bg);
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px 0;
+  padding: 8px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 8px;
+}
+
+header nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover,
+header nav a:focus {
+  text-decoration: underline;
+}
+
+
+
+.company-info {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.company-info iframe {
+  display: block;
+  margin: 1rem auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+}
+
+
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--body-font);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color);
+}
+
+
+
+.employees {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.employees h2 {
+  margin-bottom: 2rem;
+}
+
+.employees figure {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.employees img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.employees figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--accent1-color);
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 8px 8px 0 0;
+}
+
+footer .socialmedia img {
+  width: 32px;
+  margin: 0 5px;
+}
+
+
+
 .hero-home {
   position: relative;
   text-align: center;
   color: white;
+  margin-top: 1rem;
 }
+
 .hero-home img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   filter: brightness(70%);
 }
+
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 1rem;
 }
+
 .hero-text h1 {
   font-size: 2rem;
   color: #fff;
+  margin-bottom: 0.5rem;
 }
+
 .hero-text p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
   color: #f0f0f0;
 }
+
+
+
 .btn-cta {
   display: inline-block;
   background: var(--accent2-color);
-  color: white;
-  padding: 0.7rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 6px;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
 }
+
 .btn-cta:hover {
   background: var(--primary-color);
 }
@@ -49,67 +249,53 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
 }
-.newsletter form {
-  margin-top: 1rem;
-}
+
 .newsletter input[type="email"] {
   padding: 0.6rem;
   width: 60%;
-  max-width: 300px;
+  max-width: 280px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
+  margin-right: 0.5rem;
 }
+
 .newsletter button {
   padding: 0.6rem 1rem;
-  border: none;
   background: var(--primary-color);
-  color: white;
-  border-radius: 6px;
+  border: none;
+  color: #fff;
   font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
-  margin-left: 0.5rem;
+  transition: background 0.3s ease;
 }
+
 .newsletter button:hover {
   background: var(--accent2-color);
 }
 
 
 
-.grid-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem auto;
-}
-.grid-highlights article {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-.grid-highlights img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-
-
+.grid-highlights,
 .trips-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin: 2rem auto;
 }
+
+.grid-highlights article,
 .trips-grid article {
   background: #fff;
-  border-radius: 10px;
   padding: 1rem;
+  border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+
+.grid-highlights img,
 .trips-grid img {
   width: 100%;
   border-radius: 8px;
@@ -119,22 +305,27 @@
 
 
 .trip-details {
-  margin: 2rem auto;
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin: 2rem auto;
+  overflow-x: auto;
 }
+
 .trip-details table {
   width: 100%;
   border-collapse: collapse;
 }
-.trip-details th, .trip-details td {
+
+.trip-details th,
+.trip-details td {
   border: 1px solid #ccc;
   padding: 0.75rem;
   text-align: center;
 }
+
 .trip-details th {
-  background-color: var(--accent2-color);
+  background: var(--accent2-color);
   color: #fff;
 }
